@@ -1,13 +1,19 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+  background-color: black;
+}
+.card-img-top {
+  margin-left: -1px;
+}
+.card {
+  margin: auto;
+  margin-bottom: auto;
+  margin-top: 53px;
+}
+.card-title {
+  margin-top: 20px;
+}
+.card-text {
+  margin-top: 20px;
+}
