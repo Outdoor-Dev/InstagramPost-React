@@ -5,7 +5,7 @@ export const IgPost = () => {
 		<>
 			<div
 				className="card text-center "
-				style={{ width: "450px", height: "30px;" }}>
+				style={{ width: 428, height: 595 }}>
 				<div className="card-header d-flex bd-highlight mb-3">
 					<div
 						className="html-icon d-flex justify-content-start "
@@ -28,7 +28,7 @@ export const IgPost = () => {
 					</div>
 				</div>
 				<img
-					style={{ width: "450px" }}
+					style={{ width: 430 }}
 					className="card-img-top "
 					src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80"
 					alt="Card image cap"
@@ -47,7 +47,7 @@ export const IgPost = () => {
 				</div>
 
 				<div className="card-body ">
-					<p className="card-title text-left">
+					<p className="card-caption text-left">
 						Liked by <strong> 4GeeksAcademy, html5, Web </strong>
 						and <strong> 100,000 others</strong>
 					</p>

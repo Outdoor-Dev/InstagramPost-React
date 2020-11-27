@@ -2,18 +2,22 @@
 
 body {
   background-color: black;
+
 }
 .card-img-top {
   margin-left: -1px;
 }
 .card {
   margin: auto;
-  margin-bottom: auto;
+ 
   margin-top: 53px;
+
 }
-.card-title {
-  margin-top: 20px;
+.card-caption {
+  
+  font-size: 13px;
 }
 .card-text {
   margin-top: 20px;
+  font-size: 13px;
 }
