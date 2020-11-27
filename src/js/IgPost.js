@@ -6,43 +6,47 @@ export const IgPost = () => {
 			<div
 				className="card text-center "
 				style={{ width: 428, height: 595 }}>
-				<div className="card-header d-flex bd-highlight mb-3">
+				<div className="card-header d-flex bd-highlight">
 					<div
-						className="html-icon d-flex justify-content-start "
+						className="html-icon d-flex justify-content-start mt-1  "
 						style={{
 							width: "50%"
 						}}>
-						(html icon)
+						<i class="fab fa-html5 " />
 					</div>
 					<div className="title-left d-flex justify-content-start ">
-						<p>HTML</p>
+						<p>
+							<strong>HTML</strong>
+						</p>
 
 						<p>Rigoberto</p>
 					</div>
 					<div
-						className="ellipsis ml-auto p-2 bd-highlight d-flex justify-content-end "
+						className="ellipsis ml-auto  bd-highlight d-flex justify-content-end mt-1 "
 						style={{
 							width: "100%"
 						}}>
-						(ellipsis icon)
+						<i className="fas fa-ellipsis-v " />
 					</div>
 				</div>
 				<img
-					style={{ width: 430 }}
+					style={{ width: 428, height: 320 }}
 					className="card-img-top "
 					src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80"
 					alt="Card image cap"
 				/>
-				<div className="four-icons d-flex bd-highlight mb-3">
+				<div className="four-icons d-flex bd-highlight mb-3 ">
 					<div
-						className="icons-left p-2 bd-highlight  d-flex justify-content-start"
+						className="icons-left ml-2 ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-3"
 						style={{ width: "50%" }}>
-						(three icons-left)
+						<i className="far fa-heart pr-2" />
+						<i className="far fa-comment" />
+						<i className="far fa-paper-plane pl-2" />
 					</div>
 					<div
-						className="icon-right ml-auto p-2 bd-highlight d-flex justify-content-end"
+						className="icon-right mr-2 mt-3  mr-3  bd-highlight d-flex justify-content-end"
 						style={{ width: "50%" }}>
-						(save icon-right)
+						<i className="far fa-bookmark" />
 					</div>
 				</div>
 
@@ -56,8 +60,7 @@ export const IgPost = () => {
 						typesetting industry. Lorem Ipsum has been the
 						industry's standard dummy text ever since the 1500s,
 						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries.
+						scrambled it to make a type consequat.
 					</p>
 				</div>
 			</div>

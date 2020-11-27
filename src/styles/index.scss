@@ -4,20 +4,46 @@ body {
   background-color: black;
 
 }
-.card-img-top {
-  margin-left: -1px;
-}
 .card {
   margin: auto;
  
   margin-top: 53px;
 
 }
+.html-icon{
+    font-size: 26px;
+    margin-left: -10px;
+}
+.title-left{
+    font-size: 14px;
+}
+.ellipsis{
+    font-size: 26px;
+    margin-right: -9px;
+}
+.card-img-top {
+  margin-left: -1px;
+  margin-top: 0px;
+}
+.icons-left{
+    font-size: 30px;
+}
+.icon-right{
+    font-size: 30px;
+}
+.card-body{
+    margin-top: -10px;
+    margin-left:-9px;
+}
 .card-caption {
   
   font-size: 13px;
 }
 .card-text {
-  margin-top: 20px;
-  font-size: 13px;
+  margin-top:-7px;
+  font-size: 14px;
+  line-height: 15px;
+  
 }
+
+
