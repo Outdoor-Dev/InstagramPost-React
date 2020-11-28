@@ -46,34 +46,40 @@ export const IgPost = () => {
 										aria-expanded="false"
 									/>
 									<div
-										className="dropdown-menu"
+										className="dropdown-menu text-center"
 										aria-labelledby="dropdownMenuLink">
 										<a
 											className="dropdown-item text-danger"
 											href="#">
 											Report
 										</a>
+										<hr />
 										<a
 											className="dropdown-item text-danger"
 											href="#">
 											Unfollow
 										</a>
+										<hr />
 										<a className="dropdown-item" href="#">
 											Go to post
 										</a>
+										<hr />
 										<a className="dropdown-item" href="#">
 											Share to...
 										</a>
+										<hr />
 										<a className="dropdown-item" href="#">
 											Copy Link
 										</a>
-
+										<hr />
 										<a className="dropdown-item" href="#">
 											Embed
 										</a>
+										<hr />
 										<a className="dropdown-item" href="#">
 											Change Background Color
 										</a>
+										<hr />
 										<a className="dropdown-item" href="#">
 											Cancel
 										</a>
