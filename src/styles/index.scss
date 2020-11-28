@@ -6,20 +6,40 @@ body {
 }
 .card {
   margin: auto;
- 
-  margin-top: 53px;
+  margin-top: 60px;
+  
 
 }
 .html-icon{
-    font-size: 26px;
-    margin-left: -10px;
+    font-size: 25px;
+    margin-left: -9px;
+   margin-top: 3px;
+    
 }
 .title-left{
+   
+    text-align: left;
+    margin-top: 2px;
+    letter-spacing: -0.5px;
+   
+    
+}
+.html-title{
+    margin-top: -7px;
+    font-size:13.6px;
+    
+
+
+}
+.name-title{
+    margin-top: -5px;
     font-size: 14px;
+
 }
 .ellipsis{
     font-size: 26px;
     margin-right: -9px;
+    
 }
 .card-img-top {
   margin-left: -1px;
@@ -28,8 +48,9 @@ body {
 .icons-left{
     font-size: 30px;
 }
-.icon-right{
+.icon-bookmark{
     font-size: 30px;
+   
 }
 .card-body{
     margin-top: -10px;
