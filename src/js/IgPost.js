@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 export const IgPost = () => {
 	const [heart, setHeart] = useState(false);
-	const [broken, setHeart] = useState(true);
 
 	return (
 		<>
