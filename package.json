@@ -66,8 +66,10 @@
 		"popper.js": "^1.12.9",
 		"prop-types": "^15.6.1",
 		"query-string": "^5.1.1",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-polyfills": "0.0.1"
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-polyfills": "0.0.1",
+		"redux": "^4.0.5",
+		"video-react": "^0.14.1"
 	}
 }
