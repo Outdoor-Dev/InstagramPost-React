@@ -103,7 +103,7 @@ export const IgPost = () => {
 							</div>
 						</div>
 						<video
-							style={{ width: 351, height: 200 }}
+							style={{ width: 351, height: 250 }}
 							className="card-video-top rounded-0 "
 							src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/48byXia/videoblocks-relaxing-and-mesmerizing-jelly-fish-swimming-in-water-4k_b2gec_joje__b068a0e54aec5207dfed3ef4311e238e__P360.mp4"
 							autoplay="play"
@@ -114,7 +114,7 @@ export const IgPost = () => {
 
 						<div className="four-icons d-flex bd-highlight mb-3 ">
 							<div
-								className="icons-left ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-3"
+								className="icons-left ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-2"
 								style={{ width: "50%" }}>
 								<i
 									className="far fa-heart pr-2 "
@@ -143,7 +143,7 @@ export const IgPost = () => {
 								<i className="far fa-paper-plane pl-2" />
 							</div>
 							<div
-								className="icon-bookmark mr-2 mt-3  mr-3 pr-1 bd-highlight d-flex justify-content-end"
+								className="icon-bookmark mr-2 mt-2 mr-3 pr-1 bd-highlight d-flex justify-content-end"
 								style={{ width: "50%" }}>
 								<i
 									className="far fa-bookmark"

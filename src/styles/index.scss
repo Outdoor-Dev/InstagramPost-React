@@ -4,7 +4,7 @@
 
 .background-image{
   background-image: url("https://images.unsplash.com/photo-1528588641076-3fe42e01df36?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1631&q=80");
-  height: 900px;
+  height: 1000px;
   position:relative;
   
  
@@ -55,6 +55,9 @@
 .card-video-top {
   margin-left: -2px;
   margin-top: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color:black;
   
  
 
@@ -87,6 +90,10 @@
 .date{
     opacity:0.5;
     font-size: 11px;
+   
+    
 }
-
+.next-post{
+    font-size: 11px;
+}
 
