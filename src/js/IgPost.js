@@ -117,29 +117,26 @@ export const IgPost = () => {
 								style={{ width: "50%" }}>
 								<i
 									className="far fa-heart pr-2 "
-									// {
+									//onClick={() => {
 									//	heart && brokenheart
-									//	? "fas fa-heart-broken pr-2"
-									//	: "far fa-heart pr-2 "
-									//}
+									//		? "fas fa-heart-broken pr-2"
+									//		: "far fa-heart pr-2 ";
+									//}}
 									style={{
 										fontWeight: heart ? "bold" : "",
 										color: heart
 											? "rgb(185, 19, 19)"
 											: "black"
 									}}
-									onClick={
-										() =>
-											//{
-											//	if (clickcount === 0) {
-											setHeart(!heart)
-										//	setClickcount(1);
+									onClick={() => {
+										//	if (clickcount === 0) {
+										setHeart(!heart);
+										//		setClickcount(1);
 										//	} else {
-										//	setBrokenheart(!brokenheart);
+										//		setBrokenheart(!brokenheart);
 										//	}
-									} //}
+									}}
 								/>
-
 								<i className="far fa-comment" />
 								<i className="far fa-paper-plane pl-2" />
 							</div>
