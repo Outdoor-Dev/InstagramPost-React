@@ -7,9 +7,9 @@ export const IgPost = () => {
 	const [bookmark, setBookmark] = useState(false);
 	//const [color, setColor] = useState("");
 	//const randomColors = () => {
-		// Math.floor(Math.random() * 16777215).toString(16);
-		
-	};
+	// Math.floor(Math.random() * 16777215).toString(16);
+
+	//};
 	return (
 		<>
 			{" "}
@@ -19,8 +19,8 @@ export const IgPost = () => {
 						className="card  rounded-top "
 						style={{
 							width: 350,
-							height: 588,
-							backgroundColor: color
+							height: 588
+							//	backgroundColor: color
 						}}>
 						<div
 							className="card-header d-flex "
@@ -89,10 +89,10 @@ export const IgPost = () => {
 										<hr />
 										<a
 											className="dropdown-item"
-										//	onClick={() => {
+											//	onClick={() => {
 											//	setColor(!color);
-                                        //	}}>
-                                        >
+											//	}}>
+										>
 											Change Background Color
 										</a>
 
@@ -128,14 +128,16 @@ export const IgPost = () => {
 											? "rgb(185, 19, 19)"
 											: "black"
 									}}
-									onClick={() => {
-										//	if (clickcount === 0) {
-										setHeart(!heart);
+									onClick={
+										() =>
+											//{
+											//	if (clickcount === 0) {
+											setHeart(!heart)
 										//	setClickcount(1);
 										//	} else {
 										//	setBrokenheart(!brokenheart);
 										//	}
-									}}
+									} //}
 								/>
 
 								<i className="far fa-comment" />
