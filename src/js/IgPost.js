@@ -18,8 +18,8 @@ export const IgPost = () => {
 					<div
 						className="card  rounded-top "
 						style={{
-							width: 350,
-							height: 588
+							width: 315,
+							height: 522
 							//	backgroundColor: color
 						}}>
 						<div
@@ -31,7 +31,7 @@ export const IgPost = () => {
 									width: "50%"
 								}}>
 								{" "}
-								<i class="fas fa-camera" />
+								<i className="fas fa-camera" />
 								<div>
 									<p className="name-title  ">
 										<strong>Instagram</strong>
@@ -46,7 +46,8 @@ export const IgPost = () => {
 								}}>
 								<div className="dropdown">
 									<i
-										className="fas fa-ellipsis-v dropdown"
+										className="far fa-paper-plane 
+									dropdown"
 										href="#"
 										role="button"
 										id="dropdownMenuLink"
@@ -102,11 +103,21 @@ export const IgPost = () => {
 								</div>
 							</div>
 						</div>
+
+						<div className="circle ">
+							<i className=" fish fas fa-fish" />
+							<p className="user">
+								<b>saltairpix</b>
+							</p>
+							<p className="location"> Miami,Fl</p>
+							<i className="plane fas fa-ellipsis-h" />
+						</div>
+
 						<video
-							style={{ width: 351, height: 230 }}
-							className="card-video-top rounded-0 mt-3"
+							style={{ width: 316, height: 210 }}
+							className="card-video-top rounded-0"
 							src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/48byXia/videoblocks-relaxing-and-mesmerizing-jelly-fish-swimming-in-water-4k_b2gec_joje__b068a0e54aec5207dfed3ef4311e238e__P360.mp4"
-							autoplay="play"
+							autoPlay="play"
 							loop="loop"
 							type="video/mp4">
 							Your browser does not support the video tag.
@@ -117,12 +128,11 @@ export const IgPost = () => {
 								className="icons-left ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-2"
 								style={{ width: "50%" }}>
 								<i
-									className="far fa-heart pr-2 "
-									onClick={() => {
+									className={
 										heart && brokenheart
-											? "far fa-comment pr-2"
-											: "far fa-heart pr-2 ";
-									}}
+											? "far fa-thumbs-down pr-2 text-dark"
+											: "far fa-heart pr-2"
+									}
 									style={{
 										fontWeight: heart ? "bold" : "",
 										color: heart
@@ -166,20 +176,25 @@ export const IgPost = () => {
 									{" "}
 									saltairpix
 								</strong>
-								The tentacles of sea nettles contain stinging
-								cells that are used to paralyze their prey. When
-								the nettle touches its victim, the prey becomes
-								attached to the tentacle, and the jellyfish
-								moves the food into its mouth, an opening at the
-								center of its body that is linked to a
-								gastrovascular cavity that digests the meal. A
-								sting from one of these nettles is not enough to
-								kill a human (besides death by allergic
-								reaction), but they can be quite severe. Due to
-								their stinging defense mechanism, these
-								jellyfish do not have many predators.
+								The Pacific sea nettle is carnivorous and eats
+								simple and easy-to-catch animals: zooplankton,
+								larval fishes, crustaceans, eggs, and sometimes
+								other jellies. But without a mouth, how do these
+								jellies eat? Not by filtration like you might
+								expect, but more actively through a process
+								that’s a little like that of a venus flytrap.
+								With a single opening that allows food to enter
+								and waste to exit the body, the Pacific sea
+								nettle’s thin ...{" "}
+								<span className="opacity"> more </span>
 							</p>
 							<p className="date"> 5 days ago </p>
+							<span className="fa-stack fa-2x">
+								<i className="comment fas fa-comment-alt text-danger fa-stack-2x" />
+								<i className=" person fas fa-user-alt fa-stack-1x fa-inverse" />
+							</span>
+
+							<p className="number text-white "> 2 </p>
 						</div>
 					</div>
 				</div>

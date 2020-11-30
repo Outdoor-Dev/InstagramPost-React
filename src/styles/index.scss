@@ -4,19 +4,21 @@
 
 .background-image{
   background-image: url("https://images.unsplash.com/photo-1528588641076-3fe42e01df36?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1631&q=80");
-
+    background-size: cover;
   position:relative;
+  overflow-y: hidden;
+  
   
  
 }
 
 
 .card {
-  margin-left:39.91rem;
+  margin-left:35.75rem;
   background-color:rgb(215,211,205);
   transform:rotate(-0.18deg);
   position:absolute;
-  top:249px;
+  top:227px;
  
   
  
@@ -28,7 +30,7 @@
 }
 
 .camera-icon{
-    font-size: 25px;
+    font-size: 23px;
     margin-left: -9px;
    margin-top: -8px;
     
@@ -37,15 +39,15 @@
 
 .name-title{
     margin-top: -5px;
-    font-size: 25px;
+    font-size: 23px;
     letter-spacing:-1px;
     font-family: 'Satisfy', cursive;
-    margin-left:90px;
+    margin-left:75px;
     
 
 }
 .ellipsis{
-    font-size: 20px;
+    font-size: 18px;
     margin-right: -8px;
    margin-top:-8px;
     
@@ -53,9 +55,49 @@
 .dropdown-menu{
     font-size: 12px;
 }
+  .circle{
+  height: 24px;
+  width: 24px;
+  background-color:rgb(25, 110, 143);
+  border: 2px solid rgb(155, 44, 63);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  margin-top:42px;
+  margin-left:7px;
+  
+
+  
+  }
+ .fish{
+     color:rgb(206, 216, 63);
+     
+     position:absolute;
+     margin-top: 1px;
+     margin-left:1px;
+ }
+ .plane{
+     margin-left: 280px;
+     margin-top:1px;
+     position:absolute;
+ }
+ .user{
+     font-size:10px;
+     margin-top:-4px;
+     position:absolute;
+     margin-left: 30px;
+ }
+  
+  .location{
+      opacity:0.5px;
+      font-size:10px;
+      position:absolute;
+      margin-top:7px;
+      margin-left: 30px;
+  }
 .card-video-top {
   margin-left: -2px;
-  margin-top: 0px;
+ margin-top:30px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   background-color:black;
@@ -75,26 +117,58 @@
 .card-body{
     margin-top: -10px;
     margin-left:-9px;
+    height: 200px;
 }
 .card-caption {
-  margin-top: -8px;
-  font-size: 12px;
+  position: absolute;
+  bottom: 160px;
+  font-size: 11px;
   
 }
 .card-text {
-  margin-top:-7px;
-  font-size: 12px;
+ 
+  font-size: 10px;
   line-height: 15px;
+  margin-top:20px;
   
   
 }
+
+.opacity{
+    opacity:0.5;
+}
 .date{
     opacity:0.5;
-    font-size: 11px;
+    font-size: 9px;
+    position: absolute;
+    margin-top:-8px;
    
     
 }
 .next-post{
     font-size: 11px;
 }
+
+
+.comment{
+ font-size: 33px;
+ margin-left: 183px;
+ margin-top:-5px;
+ position: absolute;
+ 
+}
+.person{
+    margin-left:178px;
+    font-size:11px;
+    margin-top:-24px;
+    position:absolute;
+}
+.number{
+    font-size:13px;
+    margin-left:219px;
+     position:absolute;
+     margin-top:-65px;
+
+}
+
 
