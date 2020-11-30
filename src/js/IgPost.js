@@ -40,7 +40,7 @@ export const IgPost = () => {
 							</div>
 
 							<div
-								className="ellipsis ml-auto  bd-highlight d-flex justify-content-end "
+								className="plane ml-auto  bd-highlight d-flex justify-content-end "
 								style={{
 									width: "100%"
 								}}>
@@ -110,7 +110,7 @@ export const IgPost = () => {
 								<b>saltairpix</b>
 							</p>
 							<p className="location"> Miami,Fl</p>
-							<i className="plane fas fa-ellipsis-h" />
+							<i className="ellipsis fas fa-ellipsis-h" />
 						</div>
 
 						<video
