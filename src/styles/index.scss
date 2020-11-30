@@ -30,7 +30,7 @@
 }
 
 .camera-icon{
-    font-size: 23px;
+    font-size: 20px;
     margin-left: -9px;
    margin-top: -8px;
     
@@ -46,10 +46,12 @@
     
 
 }
-.plane{
-    font-size: 18px;
-    margin-right: -8px;
-   margin-top:-8px;
+.ellipsis{
+    margin-top: 5px;
+  margin-left: 145px;
+    font-size: 12px;
+ 
+  
     
 }
 .dropdown-menu{
@@ -76,10 +78,11 @@
      margin-top: 1px;
      margin-left:1px;
  }
- .ellipsis{
-     margin-left: 280px;
-     margin-top:1px;
-     position:absolute;
+ .plane{
+   margin-left:88px;
+     margin-top:4px;
+     font-size:20px;
+    
  }
  .user{
      font-size:10px;

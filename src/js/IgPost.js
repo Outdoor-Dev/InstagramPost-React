@@ -23,7 +23,7 @@ export const IgPost = () => {
 							//	backgroundColor: color
 						}}>
 						<div
-							className="card-header d-flex "
+							className="card-header d-flex justify-content-space-between"
 							style={{ height: 40 }}>
 							<div
 								className="camera-icon d-flex justify-content-start  "
@@ -37,16 +37,29 @@ export const IgPost = () => {
 										<strong>Instagram</strong>
 									</p>
 								</div>
+								<i
+									className="plane far fa-paper-plane d-flex justify-content-end "
+									style={{
+										width: "100%"
+									}}
+								/>
 							</div>
+						</div>
 
+						<div className="circle ">
+							<i className=" fish fas fa-fish" />
+							<p className="user">
+								<b>saltairpix</b>
+							</p>
+							<p className="location"> Miami,Fl</p>
 							<div
-								className="plane ml-auto  bd-highlight d-flex justify-content-end "
+								className="ellipsis "
 								style={{
 									width: "100%"
 								}}>
 								<div className="dropdown">
 									<i
-										className="far fa-paper-plane 
+										className="ellipsis fas fa-ellipsis-h  d-flex justify-content-end 
 									dropdown"
 										href="#"
 										role="button"
@@ -102,15 +115,6 @@ export const IgPost = () => {
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<div className="circle ">
-							<i className=" fish fas fa-fish" />
-							<p className="user">
-								<b>saltairpix</b>
-							</p>
-							<p className="location"> Miami,Fl</p>
-							<i className="ellipsis fas fa-ellipsis-h" />
 						</div>
 
 						<video
