@@ -14,7 +14,7 @@ export const IgPost = () => {
 		<>
 			{" "}
 			<body>
-				<div className="background-image">
+				<div className="background-image" style={{ height: 1000 }}>
 					<div
 						className="card  rounded-top "
 						style={{
