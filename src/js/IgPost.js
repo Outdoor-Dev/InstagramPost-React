@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MyModal } from "./component/modal";
+//import { MyModal } from "./component/modal";
 
 export const IgPost = () => {
 	const [heart, setHeart] = useState(false);
@@ -20,8 +20,8 @@ export const IgPost = () => {
 					<div
 						className="card  rounded-top "
 						style={{
-							width: 315.5,
-							height: 524.5,
+							width: 316,
+							height: 574,
 
 							background: color,
 							color: textColor
@@ -56,12 +56,66 @@ export const IgPost = () => {
 								<b>saltairpix</b>
 							</p>
 							<p className="location"> Miami,Fl</p>
-
-							<MyModal />
+							<div className="dropdown">
+								<i
+									className="ellipsis fas fa-ellipsis-h  d-flex justify-content-end 
+                                    dropdown"
+									href="#"
+									role="button"
+									id="dropdownMenuLink"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								/>
+								<div
+									className="dropdown-menu text-center"
+									aria-labelledby="dropdownMenuLink">
+									<a
+										className="dropdown-item text-danger"
+										href="#">
+										Report
+									</a>
+									<hr />
+									<a
+										className="dropdown-item text-danger"
+										href="#">
+										Unfollow
+									</a>
+									<hr />
+									<a className="dropdown-item" href="#">
+										Go to post
+									</a>
+									<hr />
+									<a className="dropdown-item" href="#">
+										Share to...
+									</a>
+									<hr />
+									<a className="dropdown-item" href="#">
+										Copy Link
+									</a>
+									<hr />
+									<a className="dropdown-item" href="#">
+										Embed
+									</a>
+									<hr />
+									<a
+										className="btn btn-primary"
+										onClick={() => {
+											setColor("black");
+											setTextColor("rgb(215,211,205)");
+										}}>
+										Change Background Color
+									</a>
+									<hr />
+									<a className="dropdown-item" href="#">
+										Cancel
+									</a>
+								</div>
+							</div>
 						</div>
 
 						<video
-							style={{ width: 318, height: 200 }}
+							style={{ width: 318, height: 205 }}
 							className="card-video-top rounded-0"
 							src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/48byXia/videoblocks-relaxing-and-mesmerizing-jelly-fish-swimming-in-water-4k_b2gec_joje__b068a0e54aec5207dfed3ef4311e238e__P360.mp4"
 							autoPlay="play"
@@ -135,30 +189,30 @@ export const IgPost = () => {
 								jellies eat? Not by filtration like you might
 								expect, but more actively through a process
 								that’s a little like that of a venus flytrap.
-								With a single opening that allows food to enter
-								and waste to exit the body, the Pacific sea
-								nettles thin ...{" "}
+								With a single ...{" "}
 								<span className="more"> more </span>
 							</p>
 							<p className="date"> 5 days ago </p>
-							<span className="fa-stack fa-2x">
+							<span className=" followers fa-stack fa-2x">
 								<i className="comment fas fa-comment-alt text-danger fa-stack-2x" />
 								<i className=" person fas fa-user-alt fa-stack-1x fa-inverse" />
 							</span>
 
 							<p className="number text-white "> 2 </p>
 						</div>
-
+						<hr />
 						<footer className="footer d-flex justify-content-between ">
-							<i className="fas fa-home" />
-							<i className="fas fa-search" />
-							<i className="far fa-plus-square" />
-							<i className="far fa-heart" />
+							<i className="home fas fa-home" />
+							<i className=" search fas fa-search" />
+							<i className="square far fa-plus-square" />
+							<i className=" heart far fa-heart" />
+
 							<div className="bottom-user">
 								<p className="second-circle ">
-									<i className="fas fa-paw" />
+									<i className="dog fas fa-paw" />
 								</p>
 							</div>
+							<p className="dot"> . </p>
 						</footer>
 					</div>
 				</div>

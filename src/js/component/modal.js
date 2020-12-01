@@ -10,7 +10,7 @@ export const MyModal = () => {
 	return (
 		<>
 			<i
-				className="ellipsis fas fa-ellipsis-h"
+				className="ellipsis fas fa-ellipsis-h "
 				style={{
 					width: "100%"
 				}}
