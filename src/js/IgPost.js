@@ -5,7 +5,8 @@ export const IgPost = () => {
 	const [brokenheart, setBrokenheart] = useState(false);
 	const [clickcount, setClickcount] = useState(0);
 	const [bookmark, setBookmark] = useState(false);
-	//const [color, setColor] = useState("");
+	const [color, setColor] = useState("rgb(215,211,205)");
+	const [textColor, setTextColor] = useState("black");
 	//const randomColors = () => {
 	// Math.floor(Math.random() * 16777215).toString(16);
 
@@ -19,8 +20,10 @@ export const IgPost = () => {
 						className="card  rounded-top "
 						style={{
 							width: 315,
-							height: 522
-							//	backgroundColor: color
+							height: 522,
+
+							background: color,
+							color: textColor
 						}}>
 						<div
 							className="card-header d-flex justify-content-space-between"
@@ -99,7 +102,14 @@ export const IgPost = () => {
 											Embed
 										</a>
 										<hr />
-										<a className="dropdown-item">
+										<a
+											className="btn btn-primary"
+											onClick={() => {
+												setColor("black");
+												setTextColor(
+													"rgb(215,211,205)"
+												);
+											}}>
 											Change Background Color
 										</a>
 										<hr />
