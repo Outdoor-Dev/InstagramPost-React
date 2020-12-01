@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { MyModal } from "./component/modal";
 
 export const IgPost = () => {
 	const [heart, setHeart] = useState(false);
@@ -55,70 +56,8 @@ export const IgPost = () => {
 								<b>saltairpix</b>
 							</p>
 							<p className="location"> Miami,Fl</p>
-							<div
-								className="ellipsis "
-								style={{
-									width: "100%"
-								}}>
-								<div className="dropdown">
-									<i
-										className="ellipsis fas fa-ellipsis-h  d-flex justify-content-end 
-									dropdown"
-										href="#"
-										role="button"
-										id="dropdownMenuLink"
-										data-toggle="dropdown"
-										aria-haspopup="true"
-										aria-expanded="false"
-									/>
-									<div
-										className="dropdown-menu text-center"
-										aria-labelledby="dropdownMenuLink">
-										<a
-											className="dropdown-item text-danger"
-											href="#">
-											Report
-										</a>
-										<hr />
-										<a
-											className="dropdown-item text-danger"
-											href="#">
-											Unfollow
-										</a>
-										<hr />
-										<a className="dropdown-item" href="#">
-											Go to post
-										</a>
-										<hr />
-										<a className="dropdown-item" href="#">
-											Share to...
-										</a>
-										<hr />
-										<a className="dropdown-item" href="#">
-											Copy Link
-										</a>
-										<hr />
-										<a className="dropdown-item" href="#">
-											Embed
-										</a>
-										<hr />
-										<a
-											className="btn btn-primary"
-											onClick={() => {
-												setColor("black");
-												setTextColor(
-													"rgb(215,211,205)"
-												);
-											}}>
-											Change Background Color
-										</a>
-										<hr />
-										<a className="dropdown-item" href="#">
-											Cancel
-										</a>
-									</div>
-								</div>
-							</div>
+
+							<MyModal />
 						</div>
 
 						<video
@@ -138,7 +77,7 @@ export const IgPost = () => {
 								<i
 									className={
 										heart && brokenheart
-											? "far fa-thumbs-down pr-2 text-dark"
+											? "fas fa-thumbs-down pr-2 text-dark "
 											: "far fa-heart pr-2"
 									}
 									style={{
@@ -151,8 +90,13 @@ export const IgPost = () => {
 										if (clickcount === 0) {
 											setHeart(!heart);
 											setClickcount(1);
-										} else {
+										} else if (clickcount === 1) {
 											setBrokenheart(!brokenheart);
+											setClickcount(2);
+										} else {
+											setHeart(false);
+											setBrokenheart(!brokenheart);
+											setClickcount(0);
 										}
 									}}
 								/>
@@ -193,7 +137,7 @@ export const IgPost = () => {
 								that’s a little like that of a venus flytrap.
 								With a single opening that allows food to enter
 								and waste to exit the body, the Pacific sea
-								nettle’s thin ...{" "}
+								nettles thin ...{" "}
 								<span className="more"> more </span>
 							</p>
 							<p className="date"> 5 days ago </p>
@@ -206,13 +150,15 @@ export const IgPost = () => {
 						</div>
 
 						<footer className="footer d-flex justify-content-between ">
-							<i class="fas fa-home" />
-							<i class="fas fa-search" />
-							<i class="far fa-plus-square" />
-							<i class="far fa-heart" />
-							<p className="second-circle ">
-								<i class="fas fa-paw" />
-							</p>
+							<i className="fas fa-home" />
+							<i className="fas fa-search" />
+							<i className="far fa-plus-square" />
+							<i className="far fa-heart" />
+							<div className="bottom-user">
+								<p className="second-circle ">
+									<i className="fas fa-paw" />
+								</p>
+							</div>
 						</footer>
 					</div>
 				</div>

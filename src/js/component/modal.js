@@ -1,27 +1,37 @@
-<div class="nav-item pr-4 d-flex justify-content-end">
-						<button type="button" class="btn btn-info btn-lg bg-success" data-toggle="modal" data-target="#myModal">Create a new post</button>
-						<div id="myModal" class="modal fade" role="dialog">
-							<div class="modal-dialog">
+import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 
-								<!-- Modal content-->
-								<div class="modal-content">
+export const MyModal = () => {
+	const [show, setShow] = useState(false);
 
-									<div class="modal-body border border-dark rounded m-3">
-										<p>
-											<placeholder></placeholder>
-										</p>
-									</div>
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
-									<div class="modal-icons">
-										<i class="fas fa-camera border border-secondary rounded p-1 ml-2"></i>
-										<i class="fas fa-map-marker-alt border border-secondary rounded-lg p-1 "></i>
-									</div>
+	return (
+		<>
+			<i
+				className="ellipsis fas fa-ellipsis-h"
+				style={{
+					width: "100%"
+				}}
+			/>
 
-									<div class="modal-footer">
-										<button type="button" class="btn btn-default border border-secondary" data-dismiss="modal">Cancel</button>
-										<button type="button" class="btn btn-default text-white bg-success" data-dismiss="modal">Publish</button>
-
-									</div>
-								</div>
-							</div>
-						</div>
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header closeButton>
+					<Modal.Title>Modal heading</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					Woohoo, you're reading this text in a modal!
+				</Modal.Body>
+				<Modal.Footer>
+					<Button variant="secondary" onClick={handleClose}>
+						Close
+					</Button>
+					<Button variant="primary" onClick={handleClose}>
+						Save Changes
+					</Button>
+				</Modal.Footer>
+			</Modal>
+		</>
+	);
+};
