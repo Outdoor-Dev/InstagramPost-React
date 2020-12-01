@@ -102,7 +102,7 @@ export const IgPost = () => {
 										className="btn btn-primary"
 										onClick={() => {
 											setColor("black");
-											setTextColor("rgb(215,211,205)");
+											setTextColor("rgb(215,211,205");
 										}}>
 										Change Background Color
 									</a>
