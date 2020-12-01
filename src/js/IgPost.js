@@ -99,15 +99,9 @@ export const IgPost = () => {
 											Embed
 										</a>
 										<hr />
-										<a
-											className="dropdown-item"
-											//	onClick={() => {
-											//	setColor(!color);
-											//	}}>
-										>
+										<a className="dropdown-item">
 											Change Background Color
 										</a>
-
 										<hr />
 										<a className="dropdown-item" href="#">
 											Cancel

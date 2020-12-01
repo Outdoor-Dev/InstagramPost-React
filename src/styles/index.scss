@@ -1,7 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 
-
 .background-image{
   background-image: url("https://images.unsplash.com/photo-1528588641076-3fe42e01df36?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1631&q=80");
     background-size: cover;
@@ -19,6 +18,7 @@
   transform:rotate(-0.18deg);
   position:absolute;
   top:227px;
+  
  
   
  
@@ -113,7 +113,9 @@
 
 
 .icon-bookmark{
-    font-size: 20px;
+    font-size: 22px;
+    margin-left:198px;
+    
    
 }
 .card-body{
