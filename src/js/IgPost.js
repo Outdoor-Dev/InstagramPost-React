@@ -19,8 +19,8 @@ export const IgPost = () => {
 					<div
 						className="card  rounded-top "
 						style={{
-							width: 315,
-							height: 522,
+							width: 315.5,
+							height: 524.5,
 
 							background: color,
 							color: textColor
@@ -122,7 +122,7 @@ export const IgPost = () => {
 						</div>
 
 						<video
-							style={{ width: 316, height: 210 }}
+							style={{ width: 318, height: 200 }}
 							className="card-video-top rounded-0"
 							src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/48byXia/videoblocks-relaxing-and-mesmerizing-jelly-fish-swimming-in-water-4k_b2gec_joje__b068a0e54aec5207dfed3ef4311e238e__P360.mp4"
 							autoPlay="play"
@@ -204,6 +204,7 @@ export const IgPost = () => {
 
 							<p className="number text-white "> 2 </p>
 						</div>
+						<footer />
 					</div>
 				</div>
 			</body>
