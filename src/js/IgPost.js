@@ -24,7 +24,7 @@ export const IgPost = () => {
 						}}>
 						<div
 							className="card-header d-flex justify-content-space-between"
-							style={{ height: 40 }}>
+							style={{ height: 30 }}>
 							<div
 								className="camera-icon d-flex justify-content-start  "
 								style={{
@@ -190,7 +190,7 @@ export const IgPost = () => {
 								With a single opening that allows food to enter
 								and waste to exit the body, the Pacific sea
 								nettle’s thin ...{" "}
-								<span className="opacity"> more </span>
+								<span className="more"> more </span>
 							</p>
 							<p className="date"> 5 days ago </p>
 							<span className="fa-stack fa-2x">
