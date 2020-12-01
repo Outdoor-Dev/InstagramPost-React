@@ -201,19 +201,21 @@ export const IgPost = () => {
 							<p className="number text-white "> 2 </p>
 						</div>
 						<hr />
-						<footer className="footer d-flex justify-content-between ">
-							<i className="home fas fa-home" />
-							<i className=" search fas fa-search" />
-							<i className="square far fa-plus-square" />
-							<i className=" heart far fa-heart" />
+						<div className="bottom-icons">
+							<footer className="footer d-flex justify-content-between ">
+								<i className="home fas fa-home" />
+								<i className=" search fas fa-search" />
+								<i className="square far fa-plus-square" />
+								<i className=" heart far fa-heart" />
 
-							<div className="bottom-user">
-								<p className="second-circle ">
-									<i className="dog fas fa-paw" />
-								</p>
-							</div>
-							<p className="dot"> . </p>
-						</footer>
+								<div className="bottom-user">
+									<p className="second-circle ">
+										<i className="dog fas fa-paw" />
+									</p>
+								</div>
+								<p className="dot"> . </p>
+							</footer>
+						</div>
 					</div>
 				</div>
 			</body>
