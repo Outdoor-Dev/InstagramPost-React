@@ -3,7 +3,7 @@
 
 .background-image{
   background-image: url("https://images.unsplash.com/photo-1528588641076-3fe42e01df36?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1631&q=80");
-    background-size: cover;
+  background-size: cover;
   position:relative;
   overflow-y: hidden;
   
@@ -96,6 +96,9 @@
       position:absolute;
       margin-top:9px;
       margin-left: 30px;
+  }
+  .pointer{
+      cursor: pointer;
   }
 .card-video-top {
   margin-left: -2px;
