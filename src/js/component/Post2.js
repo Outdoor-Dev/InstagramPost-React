@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const Post = () => {
+export const Post2 = () => {
 	const [heart, setHeart] = useState(false);
 	const [brokenheart, setBrokenheart] = useState(false);
 	const [clickcount, setClickcount] = useState(0);
@@ -10,14 +10,14 @@ export const Post = () => {
 	return (
 		<div className="post">
 			<div className="top d-flex justify-content- space-between ">
-				<div className="circle2  p-2 bd-highlight">
-					<i className=" water fas fa-water  d-flex justify-content-center" />
+				<div className="circle3  p-2 bd-highlight">
+					<i className=" utensils fas fa-utensils  d-flex justify-content-center" />
 				</div>
 
 				<div className="user p-2 bd-highlight">
-					<b>amazingsights</b>
+					<b>goodiefoodie</b>
 
-					<p className="location  p-2 bd-highlight">Agra,India</p>
+					<p className="location  p-2 bd-highlight"> NYC </p>
 				</div>
 				<div className="dropdown ml-auto p-2 bd-highlight">
 					<i
@@ -75,7 +75,7 @@ export const Post = () => {
 				Name="india"
 				style={{ width: 318, height: 205 }}
 				className="card-video-top rounded-0"
-				src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80"
+				src="https://assets3.thrillist.com/v1/image/2811267/1584x1054/crop;jpeg_quality=60.jpg"
 			/>
 
 			<div className="four-icons d-flex bd-highlight mb-3 ">
@@ -128,15 +128,14 @@ export const Post = () => {
 
 			<div className="card-body ">
 				<p className="card-caption text-left">
-					Liked by <strong> 6,000 Likes </strong>
+					<strong> 54 Likes</strong>
 				</p>
 				<p className="card-text text-left ">
-					<strong className="bold mr-2"> amazingsights</strong>
-					So grateful I got to visit the Taj Mahal this summer with my
-					man <strong>@amazingman</strong>. Backpacking through India
-					was an amazing experience and very humbling.{" "}
+					<strong className="bold mr-2"> goodiefoodie</strong>
+					Oh man! Best Food Truck Ever!!! Take me back to Colombia
+					with those delicious empanadas.{" "}
 				</p>
-				<p className="date"> 5 minutes ago </p>
+				<p className="date"> 2 days ago </p>
 			</div>
 		</div>
 	);
