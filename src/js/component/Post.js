@@ -1,156 +1,143 @@
+import React, { useState, useEffect } from "react";
 
+export const Post = () => {
+	const [heart, setHeart] = useState(false);
+	const [brokenheart, setBrokenheart] = useState(false);
+	const [clickcount, setClickcount] = useState(0);
+	const [bookmark, setBookmark] = useState(false);
+	const [color, setColor] = useState("rgb(215,211,205)");
+	const [textColor, setTextColor] = useState("black");
+	return (
+		<div className="post">
+			<div className="top d-flex justify-content- space-between ">
+				<div className="circle2  p-2 bd-highlight">
+					<i className="  water fas fa-water  d-flex justify-content-center" />
+				</div>
 
+				<div className="user p-2 bd-highlight">
+					<b>amazingsights</b>
 
-export const Post = ()=>{
-    return(
-<div className="post">
-					<div className="circle ">
-						<i className=" fish fas fa-fish" />
-						<p className="user">
-							<b>saltairpix</b>
-						</p>
-						<p className="location"> Miami,Fl</p>
-						<div className="dropdown">
-							<i
-								className="ellipsis fas fa-ellipsis-h  d-flex justify-content-end 
+					<p className="location  p-2 bd-highlight">Agra,India</p>
+				</div>
+				<div className="dropdown ml-auto p-2 bd-highlight">
+					<i
+						className="ellipsis fas fa-ellipsis-h  
                                     dropdown pointer"
-								href="#"
-								role="button"
-								id="dropdownMenuLink"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							/>
-							<div
-								className="dropdown-menu text-center"
-								aria-labelledby="dropdownMenuLink">
-								<a className="dropdown-item text-danger pointer">
-									Report
-								</a>
-								<hr />
-								<a className="dropdown-item text-danger pointer">
-									Unfollow
-								</a>
-								<hr />
-								<a className="dropdown-item pointer">
-									Go to post
-								</a>
-								<hr />
-								<a className="dropdown-item pointer">
-									Share to...
-								</a>
-								<hr />
-								<a className="dropdown-item pointer">
-									Copy Link
-								</a>
-								<hr />
-								<a className="dropdown-item pointer">Embed</a>
-								<hr />
-								<a
-									className="dropdown-item pointer"
-									onClick={() => {
-										if (color === "rgb(215,211,205)") {
-											setColor("black");
-											setTextColor("rgb(215,211,205");
-										} else {
-											setColor("rgb(215,211,205)");
-											setTextColor("black");
-										}
-									}}>
-									Change Background Color
-								</a>
-								<hr />
-								<a className="dropdown-item" href="#">
-									Cancel
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<video
-						style={{ width: 318, height: 205 }}
-						className="card-video-top rounded-0"
-						src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/48byXia/videoblocks-relaxing-and-mesmerizing-jelly-fish-swimming-in-water-4k_b2gec_joje__b068a0e54aec5207dfed3ef4311e238e__P360.mp4"
-						autoPlay="play"
-						loop="loop"
-						type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-
-					<div className="four-icons d-flex bd-highlight mb-3 ">
-						<div
-							className="icons-left ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-2"
-							style={{ width: "50%" }}>
-							<i
-								className={
-									heart && brokenheart
-										? "fas fa-thumbs-down pr-2  pointer " +
-										  (textColor === "black"
-												? "text-dark"
-												: "text-white")
-										: "far fa-heart pr-2 pointer"
+						href="#"
+						role="button"
+						id="dropdownMenuLink"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					/>
+					<div
+						className="dropdown-menu text-center"
+						aria-labelledby="dropdownMenuLink">
+						<a className="dropdown-item text-danger pointer">
+							Report
+						</a>
+						<hr />
+						<a className="dropdown-item text-danger pointer">
+							Unfollow
+						</a>
+						<hr />
+						<a className="dropdown-item pointer">Go to post</a>
+						<hr />
+						<a className="dropdown-item pointer">Share to...</a>
+						<hr />
+						<a className="dropdown-item pointer">Copy Link</a>
+						<hr />
+						<a className="dropdown-item pointer">Embed</a>
+						<hr />
+						<a
+							className="dropdown-item pointer"
+							onClick={() => {
+								if (color === "rgb(215,211,205)") {
+									setColor("black");
+									setTextColor("rgb(215,211,205");
+								} else {
+									setColor("rgb(215,211,205)");
+									setTextColor("black");
 								}
-								style={{
-									fontWeight: heart ? "bold" : "",
-									color: heart
-										? "rgb(185, 19, 19)"
-										: textColor
-								}}
-								onClick={() => {
-									if (clickcount === 0) {
-										setHeart(true);
-										setClickcount(1);
-									} else if (clickcount === 1) {
-										setBrokenheart(true);
-										setClickcount(2);
-									} else {
-										setHeart(false);
-										setBrokenheart(false);
-										setClickcount(0);
-									}
-								}}
-							/>
-
-							<i className="far fa-comment pointer" />
-							<i className="far fa-paper-plane pl-2 pointer" />
-						</div>
-						<div
-							className="icon-bookmark mr-2 mt-2 mr-3 pr-1 bd-highlight d-flex justify-content-end "
-							style={{ width: "50%" }}>
-							<i
-								className="far fa-bookmark pointer"
-								style={{
-									fontWeight: bookmark ? "bold" : ""
-								}}
-								onClick={() => setBookmark(!bookmark)}
-							/>
-						</div>
+							}}>
+							Change Background Color
+						</a>
+						<hr />
+						<a className="dropdown-item" href="#">
+							Cancel
+						</a>
 					</div>
+				</div>
+			</div>
 
-					<div className="card-body ">
-						<p className="card-caption text-left">
-							Liked by{" "}
-							<strong> 4GeeksAcademy, html5, Web </strong>
-							and <strong> 100,000 others</strong>
-						</p>
-						<p className="card-text text-left ">
-							<strong className="bold mr-2"> saltairpix</strong>
-							The Pacific sea nettle is carnivorous and eats
-							simple and easy-to-catch animals: zooplankton,
-							larval fishes, crustaceans, eggs, and sometimes
-							other jellies. But without a mouth, how do these
-							jellies eat? Not by filtration like you might
-							expect, but more actively through a process that’s a
-							little like that of a venus flytrap. With a single
-							... <span className="more"> more </span>
-						</p>
-						<p className="date"> 5 days ago </p>
-						<span className=" followers fa-stack fa-2x">
-							<i className="comment fas fa-comment-alt text-danger fa-stack-2x" />
-							<i className=" person fas fa-user-alt fa-stack-1x fa-inverse" />
-						</span>
+			<img
+				class
+				Name="india"
+				style={{ width: 318, height: 205 }}
+				className="card-video-top rounded-0"
+				src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80"
+			/>
 
-						<p className="number text-white "> 2 </p>
-					</div>
-                    </div>
-                    )}
+			<div className="four-icons d-flex bd-highlight mb-3 ">
+				<div
+					className="icons-left ml-2 pl-1 bd-highlight  d-flex justify-content-start mt-2"
+					style={{ width: "50%" }}>
+					<i
+						className={
+							heart && brokenheart
+								? "fas fa-thumbs-down pr-2  pointer " +
+								  (textColor === "black"
+										? "text-dark"
+										: "text-white")
+								: "far fa-heart pr-2 pointer"
+						}
+						style={{
+							fontWeight: heart ? "bold" : "",
+							color: heart ? "rgb(185, 19, 19)" : textColor
+						}}
+						onClick={() => {
+							if (clickcount === 0) {
+								setHeart(true);
+								setClickcount(1);
+							} else if (clickcount === 1) {
+								setBrokenheart(true);
+								setClickcount(2);
+							} else {
+								setHeart(false);
+								setBrokenheart(false);
+								setClickcount(0);
+							}
+						}}
+					/>
+
+					<i className="far fa-comment pointer" />
+					<i className="far fa-paper-plane pl-2 pointer" />
+				</div>
+				<div
+					className="icon-bookmark mr-2 mt-2 mr-3 pr-1 bd-highlight d-flex justify-content-end "
+					style={{ width: "50%" }}>
+					<i
+						className="far fa-bookmark pointer"
+						style={{
+							fontWeight: bookmark ? "bold" : ""
+						}}
+						onClick={() => setBookmark(!bookmark)}
+					/>
+				</div>
+			</div>
+
+			<div className="card-body ">
+				<p className="card-caption text-left">
+					Liked by <strong> 6,000 Likes </strong>
+				</p>
+				<p className="card-text text-left ">
+					<strong className="bold mr-2"> amazingsights</strong>
+					So grateful I got to visit the Taj Mahal this summer with my
+					man <strong>@amazingman</strong>. Backpacking through India
+					was an amazing experience and very humbling.{" "}
+				</p>
+				<p className="date"> 5 minutes ago </p>
+			</div>
+		</div>
+	);
+};
