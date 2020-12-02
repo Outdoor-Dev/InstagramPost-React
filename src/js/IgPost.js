@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 //import { MyModal } from "./component/modal";
 import { Post } from "./component/Post";
 import { Post2 } from "./component/Post2";
+import { Post3 } from "./component/Post3";
 
 export const IgPost = () => {
 	const [heart, setHeart] = useState(false);
@@ -209,6 +210,7 @@ export const IgPost = () => {
 						</div>
 						<Post />
 						<Post2 />
+						<Post3 />
 					</div>
 
 					<hr />

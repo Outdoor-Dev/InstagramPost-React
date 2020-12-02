@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const Post = () => {
+export const Post3 = () => {
 	const [heart, setHeart] = useState(false);
 	const [brokenheart, setBrokenheart] = useState(false);
 	const [clickcount, setClickcount] = useState(0);
@@ -9,15 +9,18 @@ export const Post = () => {
 	const [textColor, setTextColor] = useState("black");
 	return (
 		<div className="post">
-			<div className="top d-flex justify-content- space-between ">
-				<div className="circle2  p-2 bd-highlight">
-					<i className=" earth fas fa-globe-americas  d-flex justify-content-center" />
+			<div className="top2 d-flex justify-content- space-between  ">
+				<div className="circle4  p-2 bd-highlight">
+					<i className=" tree fas fa-tree d-flex justify-content-center" />
 				</div>
 
 				<div className="user p-2 bd-highlight">
-					<b>amazingsights</b>
+					<b>outdoorjunkie</b>
 
-					<p className="location  p-2 bd-highlight">Agra,India</p>
+					<p className="location  p-2 bd-highlight">
+						{" "}
+						Somewhere Outside{" "}
+					</p>
 				</div>
 				<div className="dropdown ml-auto p-2 bd-highlight">
 					<i
@@ -75,7 +78,7 @@ export const Post = () => {
 				Name="india"
 				style={{ width: 318, height: 205 }}
 				className="card-video-top rounded-0"
-				src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80"
+				src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/camping-quotes-1556677391.jpg?crop=1.00xw:0.855xh;0,0.0384xh&resize=1200:*"
 			/>
 
 			<div className="four-icons d-flex bd-highlight mb-3 ">
@@ -128,15 +131,18 @@ export const Post = () => {
 
 			<div className="card-body ">
 				<p className="card-caption text-left">
-					Liked by <strong> 6,000 Likes </strong>
+					<strong> 754 Likes</strong>
 				</p>
 				<p className="card-text text-left ">
-					<strong className="bold mr-2"> amazingsights</strong>
-					So grateful I got to visit the Taj Mahal this summer with my
-					man <strong>@amazingman</strong>. Backpacking through India
-					was an amazing experience and very humbling.{" "}
+					<strong className="bold mr-2"> outdoorjunkie</strong>
+					The beauty of nature around me. This beauty allows is what
+					allows me to choose places and many destinations for the
+					sake of rest, recreation and the best of times. Nature has
+					always been the first inspiration for me as an artist...{" "}
+					<span className="more"> more </span>
 				</p>
-				<p className="date"> 5 minutes ago </p>
+
+				<p className="date"> 40 minutes ago </p>
 			</div>
 		</div>
 	);
