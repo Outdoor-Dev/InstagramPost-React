@@ -49,15 +49,20 @@ export const IgPost = () => {
 						</div>
 					</div>
 					<div className="post">
-						<div className="circle ">
-							<i className=" fish fas fa-fish" />
-							<p className="user">
+						<div className="top d-flex justify-content- space-between ">
+							<div className="circle  p-2 bd-highlight">
+								<i className=" fish fas fa-fish  d-flex justify-content-center" />
+							</div>
+							<p className="user p-2 bd-highlight">
 								<b>saltairpix</b>
 							</p>
-							<p className="location"> Miami,Fl</p>
-							<div className="dropdown">
+							<p className="location  p-2 bd-highlight">
+								{" "}
+								Miami,Fl
+							</p>
+							<div className="dropdown ml-auto p-2 bd-highlight">
 								<i
-									className="ellipsis fas fa-ellipsis-h  d-flex justify-content-end 
+									className="ellipsis fas fa-ellipsis-h  
                                     dropdown pointer"
 									href="#"
 									role="button"
