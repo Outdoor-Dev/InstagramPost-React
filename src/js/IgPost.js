@@ -53,13 +53,15 @@ export const IgPost = () => {
 							<div className="circle  p-2 bd-highlight">
 								<i className=" fish fas fa-fish  d-flex justify-content-center" />
 							</div>
-							<p className="user p-2 bd-highlight">
+
+							<div className="user p-2 bd-highlight">
 								<b>saltairpix</b>
-							</p>
-							<p className="location  p-2 bd-highlight">
-								{" "}
-								Miami,Fl
-							</p>
+
+								<p className="location  p-2 bd-highlight">
+									{" "}
+									Miami,Fl
+								</p>
+							</div>
 							<div className="dropdown ml-auto p-2 bd-highlight">
 								<i
 									className="ellipsis fas fa-ellipsis-h  
@@ -201,12 +203,6 @@ export const IgPost = () => {
 								<span className="more"> more </span>
 							</p>
 							<p className="date"> 5 days ago </p>
-							<span className=" followers fa-stack fa-2x">
-								<i className="comment fas fa-comment-alt text-danger fa-stack-2x" />
-								<i className=" person fas fa-user-alt fa-stack-1x fa-inverse" />
-							</span>
-
-							<p className="number text-white "> 2 </p>
 						</div>
 					</div>
 					<hr />

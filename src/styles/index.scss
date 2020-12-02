@@ -47,21 +47,26 @@
     font-size: 23px;
     letter-spacing:-1px;
     font-family: 'Satisfy', cursive;
+    margin-left: 85px;
  
     
 
 }
-.ellipsis{
+ .plane{
+   margin-left:85px;
+     margin-top:2px;
+     font-size:18px;
+    
+ }
+
    
   
-    font-size: 12px;
+   
  
   
     
-}
-.dropdown-menu{
-    font-size: 12px;
-}
+
+
   .circle{
   height: 24px;
   width: 24px;
@@ -69,8 +74,8 @@
   border: 2px solid rgb(155, 44, 63);
   border-radius: 50%;
   display: inline-block;
- margin-left: 2px;
- margin-top: 5px;
+ margin-left: 10px;
+ margin-top: 9px;
  
   
 
@@ -83,33 +88,37 @@
     
     
  }
- .plane{
-   margin-left:88px;
-     margin-top:2px;
-     font-size:18px;
-    
- }
+
  .user{
      font-size:11px;
-     margin-top:-4px;
-     position:absolute;
-     margin-left: 30px;
+     margin-top:-1px;
+    
+     margin-left: 2px;
      
  }
   
   .location{
       opacity:0.5px;
       font-size:10px;
-      position:absolute;
-      margin-top:9px;
-      margin-left: 30px;
+     margin-top:-10px;
+     margin-left:-8px;
+    
+     
   }
+  .ellipsis{
+       font-size: 12px;
+      margin-right:4px;
+  }
+  .dropdown-menu{
+    font-size: 12px;
+}
+  
   .pointer{
       cursor: pointer;
   }
 .card-video-top {
  
- margin-top:-2px;
+ margin-top:-28px;
  
   background-color:black;
   
@@ -134,8 +143,8 @@
     height: 200px;
 }
 .card-caption {
-  position: absolute;
-  bottom: 210px;
+  
+  margin-top:-20px;
   font-size: 11px;
   
 }
@@ -143,7 +152,7 @@
  
   font-size: 12.91px;
   line-height: 15px;
-  margin-top:22px;
+  margin-top:-9px;
   
   
 }
@@ -154,8 +163,8 @@
 .date{
     opacity:0.5;
     font-size: 9px;
-    position: absolute;
-    margin-top: -10px;
+   
+    margin-top: -4px;
    
    
     
@@ -168,26 +177,8 @@
 }
 
 
-.comment{
- font-size: 33px;
- margin-left: 183px;
- margin-top:-5px;
- position: absolute;
- 
-}
-.person{
-    margin-left:178px;
-    font-size:11px;
-    margin-top:-24px;
-    position:absolute;
-}
-.number{
-    font-size:13px;
-    margin-left:219px;
-     position:absolute;
-     margin-top:-65px;
 
-}
+
 .bottom-icons{
        background-color:rgb(215,211,205) !important;
     color: black !important;
