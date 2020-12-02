@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Post } from "./component/Post";
 import { Post2 } from "./component/Post2";
 import { Post3 } from "./component/Post3";
+//import { DropDown } from "./component/DropDown";
 
 export const IgPost = () => {
 	const [heart, setHeart] = useState(false);
