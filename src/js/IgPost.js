@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 //import { MyModal } from "./component/modal";
 import { Post } from "./component/Post";
 import { Post2 } from "./component/Post2";
@@ -209,9 +209,24 @@ export const IgPost = () => {
 							</p>
 							<p className="date"> 5 days ago </p>
 						</div>
-						<Post />
-						<Post2 />
-						<Post3 />
+						<Post
+							textColor={textColor}
+							color={color}
+							setColor={setColor}
+							setTextColor={setTextColor}
+						/>
+						<Post2
+							textColor={textColor}
+							color={color}
+							setColor={setColor}
+							setTextColor={setTextColor}
+						/>
+						<Post3
+							textColor={textColor}
+							color={color}
+							setColor={setColor}
+							setTextColor={setTextColor}
+						/>
 					</div>
 
 					<hr />

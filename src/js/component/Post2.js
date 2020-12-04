@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-export const Post2 = () => {
+export const Post2 = ({ color, setColor, textColor, setTextColor }) => {
 	const [heart, setHeart] = useState(false);
 	const [brokenheart, setBrokenheart] = useState(false);
 	const [clickcount, setClickcount] = useState(0);
 	const [bookmark, setBookmark] = useState(false);
-	const [color, setColor] = useState("rgb(215,211,205)");
-	const [textColor, setTextColor] = useState("black");
+
 	return (
 		<div className="post">
 			<div className="top d-flex justify-content- space-between ">
@@ -71,10 +71,8 @@ export const Post2 = () => {
 			</div>
 
 			<img
-				class
-				Name="india"
 				style={{ width: 318, height: 205 }}
-				className="card-video-top rounded-0"
+				className=" food-truck card-video-top rounded-0"
 				src="https://assets3.thrillist.com/v1/image/2811267/1584x1054/crop;jpeg_quality=60.jpg"
 			/>
 
@@ -139,4 +137,11 @@ export const Post2 = () => {
 			</div>
 		</div>
 	);
+};
+
+Post2.propTypes = {
+	color: PropTypes.string,
+	setColor: PropTypes.func,
+	textColor: PropTypes.string,
+	setTextColor: PropTypes.func
 };
